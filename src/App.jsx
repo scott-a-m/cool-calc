@@ -1,6 +1,13 @@
 import React from 'react'
 import "./App.css";
 import { create, all } from 'mathjs'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import {
+  faFreeCodeCamp,
+  faGithub,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 const config = { }
 const math = create(all, config)
 class App extends React.Component {
@@ -15,16 +22,39 @@ class App extends React.Component {
         <div id="calc-frame">
           <Buttons />
         </div>
-        <p id="designer">
-          Designed and programmed by:{" "}
-          <a
-            href="https://codepen.io/scott-a-m/pens/public"
-            target="_blank"
-            id="link"
-          >
-            Scott
+        <div>
+        <p id="designer">developed by Scott Mitchell</p>
+        </div>
+        <div id="contact-block">
+          <a href="https://github.com/scott-a-m" target="_blank">
+            <FontAwesomeIcon
+              icon={faGithub}
+              size="2x"
+              border
+              className="contact-icon"
+            />
           </a>
-        </p>
+          <a
+            href="https://twitter.com/_scott_a_m"
+            target="_blank"
+            rel="noreferrrer"
+          >
+            <FontAwesomeIcon
+              icon={faTwitter}
+              size="2x"
+              border
+              className="contact-icon"
+            />
+          </a>
+          <a href="https://www.freecodecamp.org/scott-a-m" target="_blank">
+            <FontAwesomeIcon
+              icon={faFreeCodeCamp}
+              size="2x"
+              border
+              className="contact-icon"
+            />
+          </a>
+        </div>
       </div>
     );
   }
