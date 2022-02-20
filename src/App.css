@@ -1,5 +1,6 @@
 body {
   background: hsl(0, 0%, 15%) !important;
+  margin: 0;
 }
 
 #displayEq {
@@ -100,8 +101,6 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  transform: scale(1.1);
-
 }
 
 #calc-frame {
@@ -135,6 +134,7 @@ body {
   font-family: 'Akaya Telivigala', cursive;
   text-align: center;
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .contact-icon {
