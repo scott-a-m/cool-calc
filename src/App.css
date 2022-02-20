@@ -1,45 +1,157 @@
-body {background: hsl(0, 0%, 15%)!important;}
+body {
+  background: hsl(0, 0%, 15%) !important;
+}
 
-#displayEq {background-color: black; color: yellow; font-size: 1rem; margin: 0; padding: 0.1rem; word-wrap: break-word; font-family: 'Orbitron', sans-serif;}
+#displayEq {
+  background-color: black;
+  color: yellow;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0.1rem;
+  word-wrap: break-word;
+  font-family: 'Orbitron', sans-serif;
+}
 
-#display {background-color: black; color: white; font-size: 1.3rem; margin: 0; padding: 0.1rem; font-family: 'Orbitron', sans-serif; word-wrap: break-word;}
+#display {
+  background-color: black;
+  color: white;
+  font-size: 1.3rem;
+  margin: 0;
+  padding: 0.1rem;
+  font-family: 'Orbitron', sans-serif;
+  word-wrap: break-word;
+}
 
-.numeral {height: 60px; width: 80px; font-size: 1.2rem; background-color: hsl(0, 0%, 20%); border: 0.1px solid yellow; color: white; font-family: 'Orbitron', sans-serif;}
+.numeral {
+  height: 60px;
+  width: 80px;
+  font-size: 1.2rem;
+  background-color: hsl(0, 0%, 20%);
+  border: 0.1px solid yellow;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+}
 
-.operator {height: 60px; width: 80px; font-size: 1.2rem; background-color: hsl(0, 0%, 30%); border: 0.1px solid yellow; color: white;font-family: 'Orbitron', sans-serif; }
+.operator {
+  height: 60px;
+  width: 80px;
+  font-size: 1.2rem;
+  background-color: hsl(0, 0%, 30%);
+  border: 0.1px solid yellow;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+}
 
-#equals {height: 60px; width: 80px; font-size: 1.2rem; background-color: hsl(59, 70%, 50%); border: 0.1px solid yellow; color: white;font-family: 'Orbitron', sans-serif; border-bottom-right-radius: 2rem; }
+#equals {
+  height: 60px;
+  width: 80px;
+  font-size: 1.2rem;
+  background-color: hsl(59, 70%, 50%);
+  border: 0.1px solid yellow;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+  border-bottom-right-radius: 2rem;
+}
 
 
-#zero {height: 60px; width: 160px; font-size: 1.2rem; background-color: hsl(0, 0%, 20%); border: 0.1px solid yellow; color: white; font-family: 'Orbitron', sans-serif; border-bottom-left-radius: 2rem;}
+#zero {
+  height: 60px;
+  width: 160px;
+  font-size: 1.2rem;
+  background-color: hsl(0, 0%, 20%);
+  border: 0.1px solid yellow;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+  border-bottom-left-radius: 2rem;
+}
 
-#clear {height: 60px; width: 240px; font-size: 1.2rem; background-color: hsl(358, 80%, 35%); border: 0.1px solid yellow; color: white; font-family: 'Orbitron', sans-serif; }
+#clear {
+  height: 60px;
+  width: 240px;
+  font-size: 1.2rem;
+  background-color: hsl(358, 80%, 35%);
+  border: 0.1px solid yellow;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+}
 
-#zero:active, .numeral:active {background-color: hsl(0, 0%, 70%);  color: black}
+#zero:active, .numeral:active {
+  background-color: hsl(0, 0%, 70%);
+  color: black
+}
 
-#clear:active {background-color: hsl(358, 80%, 50%); color: black; }
+#clear:active {
+  background-color: hsl(358, 80%, 50%);
+  color: black;
+}
 
-#equals:active {background-color: hsl(60, 100%, 50%); color: black; }
+#equals:active {
+  background-color: hsl(60, 100%, 50%);
+  color: black;
+}
 
-.operator:active {background-color: hsl(0, 0%, 50%); color: black;}
+.operator:active {
+  background-color: hsl(0, 0%, 50%);
+  color: black;
+}
 
 #my-calc {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  
+  transform: scale(1.1);
+
 }
 
-#calc-frame {position: relative; text-align: right; max-width: 320px; min-width: 320px; background-color: black; border: 4px solid black; padding: 0.8rem; padding-bottom: 1rem; border-radius: 3rem;box-shadow: 0 2px 15px yellow}
+#calc-frame {
+  position: relative;
+  text-align: right;
+  max-width: 320px;
+  min-width: 320px;
+  background-color: black;
+  border: 4px solid black;
+  padding: 0.8rem;
+  padding-bottom: 1rem;
+  border-radius: 3rem;
+  box-shadow: 0 2px 15px yellow
+}
 
-.invisible {background-color: black; color: black;}
+.invisible {
+  background-color: black;
+  color: black;
+}
 
-#link, #designer {color: white; font-family: 'Long Cang', cursive; font-size: 1.3rem; text-align: center;}
 
 
-@media (max-width: 360px) {
+#link, #designer {
+  color: white;
+  font-family: 'Long Cang', cursive;
+  font-size: 2rem;
+  text-align: center;
+}
+
+#contact-block {
+  font-family: 'Akaya Telivigala', cursive;
+  text-align: center;
+  margin-top: 0;
+}
+
+.contact-icon {
+  color: white;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+}
+
+.contact-icon:hover {
+  color: black;
+  background: white;
+  cursor: pointer;
+}
+
+
+@media (max-width: 450px) {
   #my-calc {
-    transform: scale(0.8);
+    transform: scale(0.9);
   }
 }
