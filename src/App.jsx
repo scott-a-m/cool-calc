@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 import "./App.css";
-import { create, all } from 'mathjs'
+import { create, all } from "mathjs";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -8,8 +8,8 @@ import {
   faGithub,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-const config = { }
-const math = create(all, config)
+const config = {};
+const math = create(all, config);
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -23,7 +23,7 @@ class App extends React.Component {
           <Buttons />
         </div>
         <div>
-        <p id="designer">developed by Scott Mitchell</p>
+          <p id="designer">developed by Scott Mitchell</p>
         </div>
         <div id="contact-block">
           <a href="https://github.com/scott-a-m" target="_blank">
@@ -49,6 +49,14 @@ class App extends React.Component {
           <a href="https://www.freecodecamp.org/scott-a-m" target="_blank">
             <FontAwesomeIcon
               icon={faFreeCodeCamp}
+              size="2x"
+              border
+              className="contact-icon"
+            />
+          </a>
+          <a href="mailto:scott_a_mitchell@163.com">
+            <FontAwesomeIcon
+              icon={faEnvelope}
               size="2x"
               border
               className="contact-icon"
