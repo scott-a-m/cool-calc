@@ -173,6 +173,14 @@ body {
   cursor: pointer;
 }
 
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: hsl(60, 100%, 50%);
+}
+
 
 @media (max-width: 450px) {
   #my-calc {
