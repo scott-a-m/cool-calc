@@ -1,3 +1,27 @@
+/* orbitron-regular - latin */
+@font-face {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('../public/fonts/orbitron-v25-latin-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../public/fonts/orbitron-v25-latin-regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* long-cang-regular - latin */
+@font-face {
+  font-family: 'Long Cang';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('../public/fonts/long-cang-v17-latin-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../public/fonts/long-cang-v17-latin-regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 body {
   background: hsl(0, 0%, 15%) !important;
   margin: 0;
@@ -155,6 +179,7 @@ body {
     transform: scale(0.9);
   }
 }
+
 @media (max-width: 350px) {
   #my-calc {
     transform: scale(0.8);
